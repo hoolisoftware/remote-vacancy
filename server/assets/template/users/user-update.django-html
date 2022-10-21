@@ -1,0 +1,48 @@
+{% extends 'origin/base.django-html' %}
+{% load static %}
+
+{% block title %}
+    Profile Settings
+{% endblock title %}
+
+{% block content %}
+
+<div class="block1">
+    {% include 'origin/header.django-html' %}
+    <div class="container py-5">
+        <div class="card p-4">
+            <form method="POST" enctype="multipart/form-data">
+                {% for message in messages %}
+                    <div class="alert alert-success">
+                        {{message}}
+                    </div>
+                {% endfor %}
+                {% csrf_token %}
+                <img class="rounded-circle mb-3" id="userAvatar" src="{{ user.avatar.url }}" style="height: 150px; width: 150px; object-fit: cover" alt="logo">
+                <div class="row">
+                    {% for field in form %}
+                    <div class="col-sm-6 form-group mb-3">
+                            <label>
+                                {{field.label}} :  
+                            </label>
+                            <br>
+                            {{ field }}
+                            {% for error in field.errors %}
+                                <small style="color:red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi hic provident, saepe non dolores voluptatem expedita nihil ullam cumque. Sequi quasi vero deleniti voluptas assumenda, ea veritatis aspernatur eius modi?</small>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                    <div class="col-sm-6">
+                        <input type="submit" value="Update" class="btn btn-success w-100">
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="{% url 'users:user-update-password' %}" class="btn btn-primary w-100">Change Password</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,67 @@
+{% extends 'origin/base.django-html' %}
+
+{% block title %}
+    Login
+{% endblock title %}
+
+{% block content %}
+
+{% include 'origin/header.django-html' %}
+<div class="block1 container">
+    <div class="card px-3 py-5 card-login">
+        <h1 class="text-center mb-5">
+            <a class="text-reset special-font" href="#">💸 RmoteOK</a>
+        </h1>
+        <form method="POST">
+            {% csrf_token %}
+            {% for message in messages %}
+                <div class="alert alert-success">
+                    {{message}}
+                </div>
+            {% endfor %}
+            <div class="card-login__field mb-3">
+                <label>Username :</label>
+                {{ form.username }}
+                {{ form.username.errors }}
+            </div>
+            <div class="card-login__field mb-3">
+                <label>Password :</label>
+                <div class="input-group" id="passwordInput1">
+                    {{ form.password }}
+                    {{ form.password.errors }}
+                    <div 
+                        class="input-group-addon btn btn-outline-light" 
+                        id="passwordInput__button"
+                        onclick="(() => {
+                            let parent = document.getElementById('passwordInput1')
+                            Array('fa-eye-slash','fa-eye').map((item)=>{
+                                parent.querySelector('.fa').classList.toggle(item)
+                            })
+                            let type = parent.querySelector('input').type
+                            parent.querySelector('input').type = type == 'password' ? 'text' : 'password' 
+                        })()">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="card-login__button btn btn-primary w-100 mb-3">Login</button>
+            <div class="card-login__field mb-3">
+                <div class="form-check">
+                    {{ form.remember_me }}
+                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Remember me.
+                    </label>
+                </div>
+            </div>
+            <small class="card-login__field">
+                <a class="text-light" href="{% url 'users:register' %}">Haven't account yet?</a>
+                <br>
+                <a class="text-light" href="#">Forgot password?</a>
+            </small>
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}

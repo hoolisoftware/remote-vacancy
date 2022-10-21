@@ -1,0 +1,48 @@
+[
+  {
+    "model": "vacancies.vacancy",
+    "fields": {
+      "company_logo": "vacancies/logo/avatar-1_IzIy0Jo.jpg",
+      "publicant": 1,
+      "company_name": "Lamasoft",
+      "description": "# some description",
+      "to_apply": "https://googel.com",
+      "company_website": "https://google.com",
+      "company_twitter": "https://google.com",
+      "communication": "dick",
+      "verified": false,
+      "hot": false,
+      "archived": false,
+      "job_type": "fulltime",
+      "salary_type": "cash",
+      "salary": "1000$ / month",
+      "position": "webdeveloper",
+      "location": "ww",
+      "published": "2022-10-20T19:09:33.171Z",
+      "tags": ["flexible_schedule", "free_gym"]
+    }
+  },
+  {
+    "model": "vacancies.vacancy",
+    "fields": {
+      "company_logo": "vacancies/logo/avatar-1_1x3uK4i.jpg",
+      "publicant": 1,
+      "company_name": "Ubisoft",
+      "description": "some description",
+      "to_apply": "https://googel.com",
+      "company_website": "https://google.com",
+      "company_twitter": "https://google.com",
+      "communication": "fuck",
+      "verified": false,
+      "hot": false,
+      "archived": false,
+      "job_type": "fulltime",
+      "salary_type": "cash",
+      "salary": "2413",
+      "position": "webdeveloper",
+      "location": "ww",
+      "published": "2022-10-20T20:50:01.953Z",
+      "tags": ["free_gym"]
+    }
+  }
+]

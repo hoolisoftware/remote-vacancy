@@ -1,0 +1,1466 @@
+[ 
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Worldwide", "slug": "ww"
+    }
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Afghanistan", "slug": "AF"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Åland Islands", "slug": "AX"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Albania", "slug": "AL"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Algeria", "slug": "DZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "American Samoa", "slug": "AS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "AndorrA", "slug": "AD"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Angola", "slug": "AO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Anguilla", "slug": "AI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Antarctica", "slug": "AQ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Antigua and Barbuda", "slug": "AG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Argentina", "slug": "AR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Armenia", "slug": "AM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Aruba", "slug": "AW"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Australia", "slug": "AU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Austria", "slug": "AT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Azerbaijan", "slug": "AZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bahamas", "slug": "BS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bahrain", "slug": "BH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bangladesh", "slug": "BD"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Barbados", "slug": "BB"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Belarus", "slug": "BY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Belgium", "slug": "BE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Belize", "slug": "BZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Benin", "slug": "BJ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bermuda", "slug": "BM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bhutan", "slug": "BT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bolivia", "slug": "BO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bosnia and Herzegovina", "slug": "BA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Botswana", "slug": "BW"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bouvet Island", "slug": "BV"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Brazil", "slug": "BR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "British Indian Ocean Territory", "slug": "IO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Brunei Darussalam", "slug": "BN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Bulgaria", "slug": "BG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Burkina Faso", "slug": "BF"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Burundi", "slug": "BI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cambodia", "slug": "KH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cameroon", "slug": "CM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Canada", "slug": "CA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cape Verde", "slug": "CV"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cayman Islands", "slug": "KY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Central African Republic", "slug": "CF"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Chad", "slug": "TD"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Chile", "slug": "CL"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "China", "slug": "CN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Christmas Island", "slug": "CX"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cocos (Keeling) Islands", "slug": "CC"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Colombia", "slug": "CO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Comoros", "slug": "KM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Congo", "slug": "CG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Congo, The Democratic Republic of the", "slug": "CD"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cook Islands", "slug": "CK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Costa Rica", "slug": "CR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cote D\"Ivoire", "slug": "CI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Croatia", "slug": "HR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cuba", "slug": "CU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Cyprus", "slug": "CY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Czech Republic", "slug": "CZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Denmark", "slug": "DK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Djibouti", "slug": "DJ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Dominica", "slug": "DM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Dominican Republic", "slug": "DO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Ecuador", "slug": "EC"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Egypt", "slug": "EG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "El Salvador", "slug": "SV"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Equatorial Guinea", "slug": "GQ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Eritrea", "slug": "ER"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Estonia", "slug": "EE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Ethiopia", "slug": "ET"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Falkland Islands (Malvinas)", "slug": "FK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Faroe Islands", "slug": "FO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Fiji", "slug": "FJ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Finland", "slug": "FI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "France", "slug": "FR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "French Guiana", "slug": "GF"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "French Polynesia", "slug": "PF"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "French Southern Territories", "slug": "TF"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Gabon", "slug": "GA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Gambia", "slug": "GM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Georgia", "slug": "GE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Germany", "slug": "DE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Ghana", "slug": "GH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Gibraltar", "slug": "GI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Greece", "slug": "GR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Greenland", "slug": "GL"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Grenada", "slug": "GD"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Guadeloupe", "slug": "GP"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Guam", "slug": "GU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Guatemala", "slug": "GT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Guernsey", "slug": "GG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Guinea", "slug": "GN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Guinea-Bissau", "slug": "GW"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Guyana", "slug": "GY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Haiti", "slug": "HT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Heard Island and Mcdonald Islands", "slug": "HM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Holy See (Vatican City State)", "slug": "VA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Honduras", "slug": "HN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Hong Kong", "slug": "HK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Hungary", "slug": "HU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Iceland", "slug": "IS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "India", "slug": "IN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Indonesia", "slug": "ID"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Iran, Islamic Republic Of", "slug": "IR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Iraq", "slug": "IQ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Ireland", "slug": "IE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Isle of Man", "slug": "IM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Israel", "slug": "IL"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Italy", "slug": "IT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Jamaica", "slug": "JM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Japan", "slug": "JP"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Jersey", "slug": "JE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Jordan", "slug": "JO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Kazakhstan", "slug": "KZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Kenya", "slug": "KE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Kiribati", "slug": "KI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Korea, Democratic People\"S Republic of", "slug": "KP"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Korea, Republic of", "slug": "KR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Kuwait", "slug": "KW"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Kyrgyzstan", "slug": "KG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Lao People\"S Democratic Republic", "slug": "LA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Latvia", "slug": "LV"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Lebanon", "slug": "LB"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Lesotho", "slug": "LS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Liberia", "slug": "LR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Libyan Arab Jamahiriya", "slug": "LY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Liechtenstein", "slug": "LI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Lithuania", "slug": "LT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Luxembourg", "slug": "LU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Macao", "slug": "MO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Macedonia, The Former Yugoslav Republic of", "slug": "MK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Madagascar", "slug": "MG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Malawi", "slug": "MW"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Malaysia", "slug": "MY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Maldives", "slug": "MV"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Mali", "slug": "ML"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Malta", "slug": "MT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Marshall Islands", "slug": "MH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Martinique", "slug": "MQ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Mauritania", "slug": "MR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Mauritius", "slug": "MU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Mayotte", "slug": "YT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Mexico", "slug": "MX"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Micronesia, Federated States of", "slug": "FM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Moldova, Republic of", "slug": "MD"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Monaco", "slug": "MC"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Mongolia", "slug": "MN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Montserrat", "slug": "MS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Morocco", "slug": "MA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Mozambique", "slug": "MZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Myanmar", "slug": "MM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Namibia", "slug": "NA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Nauru", "slug": "NR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Nepal", "slug": "NP"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Netherlands", "slug": "NL"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Netherlands Antilles", "slug": "AN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "New Caledonia", "slug": "NC"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "New Zealand", "slug": "NZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Nicaragua", "slug": "NI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Niger", "slug": "NE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Nigeria", "slug": "NG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Niue", "slug": "NU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Norfolk Island", "slug": "NF"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Northern Mariana Islands", "slug": "MP"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Norway", "slug": "NO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Oman", "slug": "OM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Pakistan", "slug": "PK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Palau", "slug": "PW"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Palestinian Territory, Occupied", "slug": "PS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Panama", "slug": "PA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Papua New Guinea", "slug": "PG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Paraguay", "slug": "PY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Peru", "slug": "PE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Philippines", "slug": "PH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Pitcairn", "slug": "PN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Poland", "slug": "PL"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Portugal", "slug": "PT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Puerto Rico", "slug": "PR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Qatar", "slug": "QA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Reunion", "slug": "RE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Romania", "slug": "RO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Russian Federation", "slug": "RU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "RWANDA", "slug": "RW"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Saint Helena", "slug": "SH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Saint Kitts and Nevis", "slug": "KN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Saint Lucia", "slug": "LC"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Saint Pierre and Miquelon", "slug": "PM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Saint Vincent and the Grenadines", "slug": "VC"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Samoa", "slug": "WS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "San Marino", "slug": "SM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Sao Tome and Principe", "slug": "ST"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Saudi Arabia", "slug": "SA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Senegal", "slug": "SN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Serbia and Montenegro", "slug": "CS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Seychelles", "slug": "SC"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Sierra Leone", "slug": "SL"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Singapore", "slug": "SG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Slovakia", "slug": "SK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Slovenia", "slug": "SI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Solomon Islands", "slug": "SB"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Somalia", "slug": "SO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "South Africa", "slug": "ZA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "South Georgia and the South Sandwich Islands", "slug": "GS"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Spain", "slug": "ES"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Sri Lanka", "slug": "LK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Sudan", "slug": "SD"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Suri", "slug": "SR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Svalbard and Jan Mayen", "slug": "SJ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Swaziland", "slug": "SZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Sweden", "slug": "SE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Switzerland", "slug": "CH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Syrian Arab Republic", "slug": "SY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Taiwan, Province of China", "slug": "TW"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Tajikistan", "slug": "TJ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Tanzania, United Republic of", "slug": "TZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Thailand", "slug": "TH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Timor-Leste", "slug": "TL"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Togo", "slug": "TG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Tokelau", "slug": "TK"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Tonga", "slug": "TO"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Trinidad and Tobago", "slug": "TT"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Tunisia", "slug": "TN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Turkey", "slug": "TR"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Turkmenistan", "slug": "TM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Turks and Caicos Islands", "slug": "TC"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Tuvalu", "slug": "TV"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Uganda", "slug": "UG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Ukraine", "slug": "UA"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "United Arab Emirates", "slug": "AE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "United Kingdom", "slug": "GB"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "United States", "slug": "US"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "United States Minor Outlying Islands", "slug": "UM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Uruguay", "slug": "UY"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Uzbekistan", "slug": "UZ"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Vanuatu", "slug": "VU"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Venezuela", "slug": "VE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Viet Nam", "slug": "VN"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Virgin Islands, British", "slug": "VG"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Virgin Islands, U.S.", "slug": "VI"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Wallis and Futuna", "slug": "WF"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Western Sahara", "slug": "EH"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Yemen", "slug": "YE"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Zambia", "slug": "ZM"
+    } 
+  },
+  {
+    "model": "vacancies.Location",
+    "fields": {
+      "title": "Zimbabwe", "slug": "ZW"
+    }
+  }
+]

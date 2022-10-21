@@ -1,0 +1,37 @@
+{% extends 'origin/base.django-html' %}
+{% load static %}
+
+{% block title %}
+    Your Publications
+{% endblock title %}
+
+{% block content %}
+
+{% include 'origin/header.django-html' %}
+
+<div class="container py-5">
+    <div class="mb-5">
+        <center>
+            <h1 class="heading">
+                Your Archive
+            </h1>
+            <small class="text-muted">
+                <a href="{% url 'vacancies:vacancy-list' %}">
+                    < Back from my active vacancies
+                </a>
+            </small>
+        </center>
+    </div>
+    <center>
+        <span id="emptyHeading" class="h2 text-muted {% if object_list %}d-none{% endif %}">There aren't vacancies in your archive...</span>
+    </center>
+    <div id="vacancyList">
+        {% for object in object_list %}
+            {% include 'vacancies/mixins/vacancy-card.django-html' with object=object %}
+        {% endfor %}
+    </div>
+</div>
+
+{% include 'vacancies/mixins/vacancy-delete-modal.django-html' %}
+
+{% endblock content %}

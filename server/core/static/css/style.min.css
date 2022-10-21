@@ -1,0 +1,83 @@
+@import '../fonts/circe/stylesheet.css';
+@import '../fonts/enthalpy298/stylesheet.css';
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap");
+.card-login {
+  max-width: 500px;
+  margin: 5rem auto;
+}
+.card-login__field, .card-login__button {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Circe";
+}
+
+.special-font {
+  font-family: "Enthalpy 298";
+  letter-spacing: 0.1em;
+  text-decoration: none !important;
+}
+
+.heading {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.form-control, .form-control:active, .form-control:hover, .form-control:focus, .ss-multi-selected {
+  border: none;
+  color: white;
+}
+
+.card, .form-control, .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.06) ;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  -webkit-box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}

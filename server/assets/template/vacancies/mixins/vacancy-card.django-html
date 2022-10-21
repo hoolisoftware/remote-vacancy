@@ -1,0 +1,59 @@
+{% load static %}
+
+<div class="card text-light p-4 mb-3" id="vacancyCard{{object.id}}">
+    <div class="row align-items-center">
+        <div class="col-md-4 mb-3">
+            <div class="d-flex" style="gap: 1rem">
+                <a data-bs-toggle="collapse" href="#vacancyContent{{object.id}}" role="button" aria-expanded="false"
+                    aria-controls="vacancyContent{{object.id}}">
+                    <img src="{{ object.company_logo.url }}" style="height: 70px; width: 70px; object-fit: cover" class="rounded-circle" alt="logo">
+                </a>
+                <div>
+                    <div class="mb-2">
+                        <b>
+                            <a data-bs-toggle="collapse" href="#vacancyContent{{object.id}}" role="button"
+                                aria-expanded="false" aria-controls="vacancyContent{{object.id}}" class="text-light">
+                                {{ object.company_name }}
+                            </a>
+                        </b>
+                        {% if object.verified %}
+                        <span class="badge text-bg-primary rounded-pill"> ✅ Verified</span>
+                        {% endif %}
+                        <br>
+                        <span class="text-muted">{{object.position}}</span>
+                    </div>
+                    <span class="badge text-bg-light">🌏 {{ object.location }}</span>
+                    <span class="badge text-bg-success">{{ object.salary }}</span>
+                    &nbsp;
+                    {% if object.hot %}
+                    <img src="{% static '' %}img/hot2.gif" alt="hot">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            {% for tag in object.tags.all %}
+            <a href="#" class="badge text-bg-light">{{ tag.title }}</a>
+            {% endfor %}
+        </div>
+        <div class="col-md-2 col-3">🖇️ {{ object.since_published }}</div>
+        <div class="btn-group col-9 col-md-3" role="group text-end">
+            <a href="{% url 'vacancies:vacancy-update' pk=object.id %}" class="btn btn-sm btn-success">Edit</a>
+            <a href="#" class="btn btn-sm btn-primary" onclick="
+                document.getElementById('vacancyCard{{object.id}}').remove()
+                fetch('/api/vacancy-archive-toggle/{{object.id}}/')
+            ">
+                {% if object.archived %}
+                    Unarchive
+                {% else %}
+                    Archive
+                {% endif %}
+            </a>
+            <a href="#" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#vacancyDeleteModal"
+                data-bs-id="{{ object.id }}" data-bs-title="{{ object.company_name }} - {{ object.position }}">
+                Delete
+            </a>
+        </div>
+        {% include 'vacancies/mixins/vacancy-content.django-html' with object=object %}
+    </div>
+</div>

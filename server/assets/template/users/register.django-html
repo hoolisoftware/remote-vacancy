@@ -1,0 +1,96 @@
+{% extends 'origin/base.django-html' %}
+
+{% block title %}
+    Register
+{% endblock title %}
+
+{% block content %}
+
+{% include 'origin/header.django-html' %}
+<div class="block1 container">
+    <div class="card px-3 py-5 card-register">
+        <h1 class="text-center mb-5">
+            <a class="text-reset special-font" href="#">💸 RmoteOK</a>
+        </h1>
+        <form method="post">
+            {% csrf_token %}
+            {% for message in messages %}
+                <div class="alert alert-success">
+                    {{message}}
+                </div>
+            {% endfor %}
+            {% if form.errors %}
+                {% for key,value in form.errors.items %}
+                    {{key}}, {{value}}
+                {% endfor %}
+            {% endif %}
+            <div class="card-register__field row">
+                <div class="col-md-6 mb-3">
+                    <label>Username :</label>
+                    {{form.username}}
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>E-mail :</label>
+                    {{form.email}}
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>First name :</label>
+                    {{form.first_name}}
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Last name :</label>
+                    {{form.last_name}}
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Password :</label>
+                    <div class="input-group" id="passwordInput1">
+                        {{form.password1}}
+                        {{form.password1.errors}}
+                        <div 
+                            class="input-group-addon btn btn-outline-light" 
+                            id="passwordInput__button"
+                            onclick="(() => {
+                                let parent = document.getElementById('passwordInput1')
+                                Array('fa-eye-slash','fa-eye').map((item)=>{
+                                    parent.querySelector('.fa').classList.toggle(item)
+                                })
+                                let type = parent.querySelector('input').type
+                                parent.querySelector('input').type = type == 'password' ? 'text' : 'password' 
+                            })()">
+                            <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Password :</label>
+                    <div class="input-group" id="passwordInput2">
+                        {{ form.password2 }}
+                        {{ form.password2.errors }}
+                        <div 
+                            class="input-group-addon btn btn-outline-light" 
+                            id="passwordInput__button"
+                            onclick="(() => {
+                                let parent = document.getElementById('passwordInput2')
+                                Array('fa-eye-slash','fa-eye').map((item)=>{
+                                    parent.querySelector('.fa').classList.toggle(item)
+                                })
+                                let type = parent.querySelector('input').type
+                                parent.querySelector('input').type = type == 'password' ? 'text' : 'password' 
+                            })()">
+                            <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="card-register__button btn btn-primary w-100 mb-3">Register</button>
+            <small class="card-register__field">
+                <a class="text-light" href="{% url 'users:login' %}">Do you have account?</a>
+                <br>
+                <a class="text-light" href="#">Forgot password?</a>
+            </small>
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,9 @@
+{% extends 'origin/base.django-html' %}
+
+{% block content %}
+
+    {% for object in object_list %}
+        {{ object }}
+    {% endfor %}
+
+{% endblock content %}

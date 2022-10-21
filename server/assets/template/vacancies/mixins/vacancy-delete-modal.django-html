@@ -1,0 +1,51 @@
+
+<!-- Modal -->
+<div class="modal fade" id="vacancyDeleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content card">
+            <div class="modal-body">
+                <h5 class="modal-title mb-3" id="exampleModalLabel">
+                    Are you sure you want to delete vacancy 
+                    "<span class="modal__vacancy-title-span">Front-end developer</span>"?
+                </h5>
+                <div class="text-muted mb-3">
+                    This vacancy will be <span class="text-danger">deleted</span> permanently. Instead, you can move unnecessary vacancies to <span class="text-primary">archive</span> and store them until they are needed (they'll not be displayed in dashboard).
+                </div>
+                <div class="text-end">
+                    <input class="modal__vacancy-id-input" type="text" hidden>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    &nbsp;
+                    <button 
+                        id="vacancyDeleteButton"
+                        type="button" 
+                        class="btn btn-danger" 
+                        data-bs-dismiss="modal">Delete!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('vacancyDeleteModal').addEventListener('show.bs.modal', function (event) {
+
+        const modal = document.getElementById('vacancyDeleteModal')
+        const modalButton = event.relatedTarget
+
+        let vacancyTitle = modalButton.getAttribute('data-bs-title')
+        let vacancyId = modalButton.getAttribute('data-bs-id')
+
+        let vacancyTitleSpan = modal.querySelector('.modal__vacancy-title-span')
+        let vacancyIdInput = modal.querySelector('.modal__vacancy-id-input')
+
+        vacancyTitleSpan.textContent = vacancyTitle
+        vacancyIdInput.value = vacancyId
+        
+    })
+
+    document.getElementById('vacancyDeleteButton').addEventListener('click', ()=>{
+        fetch(`/api/vacancy-delete/${document.querySelector('.modal__vacancy-id-input').value}`)
+            .then(res=>res.json())
+        document.getElementById(`vacancyCard${document.querySelector('.modal__vacancy-id-input').value}`).remove()
+    })
+</script>

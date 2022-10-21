@@ -1,0 +1,16 @@
+[
+    {
+        "model": "vacancies.VacancyTag",
+        "fields": {
+            "slug": "free_gym",
+            "title": "Free GYM sub"
+        }
+    },
+    {
+        "model": "vacancies.VacancyTag",
+        "fields": {
+            "slug": "flexible_schedule",
+            "title": "Flexible Schedule"
+        }
+    }
+]

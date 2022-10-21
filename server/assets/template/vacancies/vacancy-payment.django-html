@@ -1,0 +1,5 @@
+{% extends 'origin/base.django-html' %}
+
+{% block content %}
+    {{ object }}
+{% endblock content %}s

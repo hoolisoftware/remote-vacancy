@@ -1,0 +1,23 @@
+[
+    {
+        "model": "vacancies.VacancyPosition",
+        "fields": {
+            "slug": "webdeveloper",
+            "title": "Web-developer"
+        }
+    },
+    {
+        "model": "vacancies.VacancyPosition",
+        "fields": {
+            "slug": "backend_developer",
+            "title": "Backend Developer"
+        }
+    },
+    {
+        "model": "vacancies.VacancyPosition",
+        "fields": {
+            "slug": "frontend_developer",
+            "title": "Front-end Developer"
+        }
+    }
+]

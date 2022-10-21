@@ -1,0 +1,277 @@
+{% extends 'origin/base.django-html' %}
+{% load static %}
+{% load custom_templatetags %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+{% block content %}
+
+<script>
+    let next = 'http://localhost:8000/api/vacancy-list/'
+    let loadingVacancies = false
+    
+    const loadVacancies = () => {
+        if (!next) return 
+        if (loadingVacancies) return
+        
+        loadingVacancies = true
+        fetch(next)
+            .then((res)=>res.json())
+            .then((data)=>{
+                next = data.next
+                data.results.forEach(object=>{
+                    document.getElementById('vacancyList').insertAdjacentHTML('beforeend',renderVacancy(object))
+                })
+                loadingVacancies = false
+            })
+    }    
+        
+    loadVacancies()
+    
+    addEventListener('scroll', (event) => {
+        if (((window.innerHeight + window.scrollY) >= document.body.offsetHeight))
+        {
+            console.log(loadingVacancies)
+            loadVacancies()
+        }
+    }); 
+
+    const renderVacancy = (object) => {
+        return `
+            <div class="card text-light p-4 mb-3">
+                <div class="row align-items-center">
+                    <div class="col-md-5 mb-3">
+                        <div class="d-flex" style="gap: 1rem">
+                            <a 
+                            data-bs-toggle="collapse" 
+                            href="#vacancyContent${object.id}" 
+                            role="button" 
+                            aria-expanded="false"
+                            aria-controls="vacancyContent${object.id}">
+                                <img src="${object.company_logo}" style="height: 70px; width: 70px; object-fit: cover" class="rounded-circle" alt="logo">
+                            </a>
+                            <div>
+                                <div class="mb-2">
+                                    <b>
+                                        <a  
+                                        class="text-light"
+                                        data-bs-toggle="collapse" 
+                                        href="#vacancyContent${object.id}" 
+                                        role="button" 
+                                        aria-expanded="false"
+                                        aria-controls="vacancyContent${object.id}">
+                                            ${object.company_name}
+                                        </a>
+                                    </b>&nbsp;
+                                    ${object.verified?`<span class="badge text-bg-primary rounded-pill"> ✅ Верифицирована</span>`:''}
+                                    <br>
+                                    <span class="text-muted">${object.position}</span>
+                                </div>
+                                <span class="badge text-bg-light">🌏 ${object.location}</span>
+                                <span class="badge text-bg-success">${object.salary}</span>
+                                &nbsp;
+                                ${object.hot?`<img src="static/img/hot2.gif" alt="hot">`:''}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        ${object.tags.map(tag=>`<a href="#" class="badge text-bg-light">${tag}</a>`)}
+                    </div>
+                    <div class="col-md-2 col-6">🖇️ ${object.since_published}</div>
+                    <div class="col-md-2 col-6 text-end"><a href="${object.to_apply}" class="btn btn-success">Apply</a></div>
+                </div>
+                {% include 'vacancies/mixins/vacancy-content.django-html' with object=object %}
+                <div class="collapse" id="vacancyContent${object.id}">
+                    <div class="pt-4">
+                        <div>
+                            ${object.description_html}
+                        </div>
+                        <p class="mt-4 h5">Vacancy Info :</p>
+                        <div style="overflow-x: auto">
+                            <div style="min-width:400px;">
+                                <table class="table table-dark mb-0">
+                                    <tr>
+                                        <td width="300px">Position</td>
+                                        <td>${object.position}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Job Type</td>
+                                        <td>${object.job_type}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Salary Type</td>
+                                        <td>${object.salary_type}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Salary Amount</td>
+                                        <td>${object.salary}</td>
+                                    </tr>
+                                </table>
+                                <div class="collapse" id="vacancyDetails${object.id}">
+                                    <table class="table table-dark mb-0">
+                                        <tr>
+                                            <td width="300px">Published</td>
+                                            <td>${object.published}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Company Website</td>
+                                            <td>${object.company_website}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Company Twitter</td>
+                                            <td>${object.company_twitter}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Location</td>
+                                            <td>${object.location}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#vacancyDetails${object.id}" class="text-decoration-none mt-4 d-block" data-bs-toggle="collapse"
+                        role="button" aria-expanded="false" aria-controls="vacancyDetails${object.id}">
+                        See / Collapse Details...
+                    </a>
+                </div>
+            </div>
+        `
+    }
+</script>
+
+<div class="block1">
+    {% include 'origin/header.django-html' %}
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="my-5">
+            <h1 class="mb-3 heading">Get <b>remote</b> job!</h1>
+            
+            {% for position in get_positions %}
+                {{ position.title }}
+            {% endfor %}
+            <div class="input-group mb-3">
+                <select class="form-control form-control-lg" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <option disabled selected hidden>Position...</option>
+                    {% get_positions as positions %}
+                    {% for position in positions %}
+                        <option value="{{position.slug}}">{{ position.title }}</option>
+                    {% endfor %}
+                </select>
+                <button class="btn btn-outline-light" type="button">🔍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container px-4 py-5">
+    <div class="mb-5">
+        <h1 class="heading">
+            Vacancies
+        </h1>
+        <form id="filterForm">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <select class="form-control" name="position">
+                                <option hidden value="">🔍 Position...</option>
+                                {% for position in positions %}
+                                    <option value="{{position.slug}}">{{ position.title }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <select class="form-control" name="location">
+                                <option hidden value="">🌏 Location...</option>
+                                {% get_locations as locations %}
+                                {% for location in locations %}
+                                <option value="{{ location.slug }}">{{ location.title }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" name="verified">
+                                <label class="form-check-label">
+                                    Verified Company
+                                </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" name="hot">
+                                <label class="form-check-label">
+                                    HOT Vacancy
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-12 mb-3">
+                        <select multiple id="slim-select" name="tag">
+                            {% get_tags as tags %}
+                            {% for tag in tags %}
+                                <option value="{{tag.slug}}">{{tag.title}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <select class="form-control text-muted">
+                            <option hidden>🦴 Sort by... (Coming Soon...)</option>
+                            <option value="date"></option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted">Applied 5+ times (Coming Soon...)</label>
+                        <br>
+                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="vacancyList">
+        {% for object in object_list %}
+            
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    new SlimSelect({
+        select: '#slim-select',
+        placeholder: '🎪 Tags...'
+    })
+
+    let filterForm = document.getElementById('filterForm')
+
+    let filterset = [
+        filterForm.tag,
+        filterForm.position,
+        filterForm.location,
+        filterForm.hot,
+        filterForm.verified,
+    ]
+
+    
+    filterset.forEach(filter=>filter.addEventListener('change',()=>{
+        let queryString = '?'
+    
+        Array.from(filterForm.tag.options).filter(opt=>opt.selected).forEach(opt=>queryString+='tags='+opt.value+'&')
+
+        queryString += 'position=' + filterForm.position.value + '&'
+        queryString += 'location=' + filterForm.location.value + '&'
+        queryString += filterForm.hot.checked ? 'hot=' + filterForm.hot.checked + '&' : ''
+        queryString += filterForm.verified.checked ? 'verified=' + filterForm.verified.checked + '&' : ''
+
+        console.log(queryString)
+        next = window.location.href+'api/vacancy-list/'+queryString
+        console.log(next)
+        
+        document.getElementById('vacancyList').innerHTML = ''
+        loadVacancies()
+    }))
+</script>
+{% endblock content %}

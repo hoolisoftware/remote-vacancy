@@ -1,0 +1,76 @@
+{% extends 'origin/base.django-html' %}
+{% load static %}
+
+{% block title %}
+Profile Settings
+{% endblock title %}
+
+{% block content %}
+
+<div class="block1">
+    {% include 'origin/header.django-html' %}
+    <div class="container py-5">
+        <div class="card p-4">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <img 
+                    class="rounded-circle mb-3" 
+                    id="companyLogo" 
+                    src="
+                        {% if object %}
+                            {{ object.company_logo.url }}
+                        {% else %}
+                            /media/vacancies/logo/default/default.png
+                        {% endif %}
+                    "
+                    style="height: 150px; width: 150px; object-fit: cover" 
+                    alt="logo">
+                <div class="row">
+                    {% for field in form %}
+                        {% if field.widget_type == 'textarea' %}
+                            <div class="col-sm-12 form-group mb-3">
+                                <label>
+                                    {{field.label}} :
+                                </label>
+                                <br>
+                                {{ field }}
+                                <small class="text-gray mt-3 d-block">
+                                    {{field.help_text}}
+                                </small>
+                                {% for error in field.errors %}
+                                    <small style="color:red">
+                                        {{error}}
+                                    </small>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            <div class="col-sm-12 form-group mb-3">
+                                <label>
+                                    {{field.label}} :
+                                </label>
+                                <br>
+                                {{ field }}
+                                <small class="text-gray d-block mt-3">
+                                    {{field.help_text}}
+                                </small>
+                                {% for error in field.errors %}
+                                    <small style="color:red">
+                                        {{ error }}
+                                    </small>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <input type="submit" value="Submit" class="btn btn-success w-100">
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    new SlimSelect({
+        select: '#slim-select'
+    })
+</script>
+{% endblock content %}
