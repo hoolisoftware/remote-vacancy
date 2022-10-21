@@ -10,12 +10,17 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Vacancies</a>
+                            <a href="{% url 'vacancies:home' %}" class="nav-link active" aria-current="page" href="#">Vacancies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a href="{% url 'vacancies:about' %}" class="nav-link active" aria-current="page">About</a>
                         </li>
-                        <button class="btn btn-primary mt-3 d-lg-none">📄 Post Job</button>
+                        <a class="btn btn-primary mt-3 d-lg-none" href="{% url 'vacancies:vacancy-create' %}">📄 Post Job</a>
+                        <a class="btn btn-primary mt-3 d-lg-none" href="{% url 'users:login' %}">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            &nbsp;
+                            Login / Register
+                        </a>                        
                     </ul>
                 </div>
                     <div class="d-none d-lg-block">
