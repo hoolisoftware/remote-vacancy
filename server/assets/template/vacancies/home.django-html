@@ -9,7 +9,7 @@
 {% block content %}
 
 <script>
-    let next = 'http://localhost:8000/api/vacancy-list/'
+    let next = '/api/vacancy-list/'
     let loadingVacancies = false
     
     const loadVacancies = () => {
@@ -267,7 +267,7 @@
         queryString += filterForm.verified.checked ? 'verified=' + filterForm.verified.checked + '&' : ''
 
         console.log(queryString)
-        next = window.location.href+'api/vacancy-list/'+queryString
+        next = '/api/vacancy-list/'+queryString
         console.log(next)
         
         document.getElementById('vacancyList').innerHTML = ''
