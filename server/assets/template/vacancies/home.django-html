@@ -255,7 +255,7 @@
         filterForm.verified,
     ]
 
-    const mainPositionFilter = document.getElementById('mainPositionFilter').addEventListener('change',()=>{
+    document.getElementById('mainPositionFilter').addEventListener('change',()=>{
         let queryString = '?'+ 'position=' + document.getElementById('mainPositionFilter').value
         document.getElementById('vacancyList').innerHTML = ''
         next = '/api/vacancy-list/' + queryString
