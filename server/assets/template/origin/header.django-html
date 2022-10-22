@@ -16,29 +16,35 @@
                             <a href="{% url 'vacancies:about' %}" class="nav-link active" aria-current="page">About</a>
                         </li>
                         {% if request.user.is_authenticated %}
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'vacancies:vacancy-list' %}">
+                            <li class="nav-item d-block d-lg-none"><a class="nav-link active" aria-current="page" href="{% url 'vacancies:vacancy-list' %}">
                                 My Vacancies
                             </a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'users:logout' %}">
+                            <li class="nav-item d-block d-lg-none"><a class="nav-link active" aria-current="page" href="{% url 'users:logout' %}">
                                 <i class="fa-solid fa-right-from-bracket"></i>
                                 &nbsp;
                                 Logout
                             </a></li>
                         {% endif %}
-                        <a class="btn btn-success mt-3 d-lg-none" href="{% url 'vacancies:vacancy-create' %}">📄 Post Job (?$)</a>
-                        {% if not request.user.is_authenticated %}
-                            <a class="btn btn-primary mt-3 d-lg-none" href="{% url 'users:login' %}">
-                                <i class="fa-solid fa-right-to-bracket"></i>
-                                &nbsp;
-                                Login / Register
-                            </a>                        
-                        {% else %}
-                            <a class="btn btn-primary mt-3 d-lg-none" href="{% url 'users:user-update' %}">
-                                <i class="fa-solid fa-right-to-bracket"></i>
-                                &nbsp;
-                                Profile
-                            </a>
-                        {% endif %}
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a class="btn btn-success mt-3 d-lg-none d-block w-100" href="{% url 'vacancies:vacancy-create' %}">📄 Post Job (?$)</a>
+                            </div>
+                            <div class="col-sm-6">
+                                {% if not request.user.is_authenticated %}
+                                    <a class="btn btn-primary mt-3 d-lg-none w-100 d-block" href="{% url 'users:login' %}">
+                                        <i class="fa-solid fa-right-to-bracket"></i>
+                                        &nbsp;
+                                        Login / Register
+                                    </a>                        
+                                {% else %}
+                                    <a class="btn btn-primary mt-3 d-lg-none w-100 d-block" href="{% url 'users:user-update' %}">
+                                        <i class="fa-solid fa-right-to-bracket"></i>
+                                        &nbsp;
+                                        Profile
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
                     </ul>
                 </div>
                     <div class="d-none d-lg-block">

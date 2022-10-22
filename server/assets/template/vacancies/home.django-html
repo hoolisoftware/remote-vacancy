@@ -152,7 +152,7 @@
                 {{ position.title }}
             {% endfor %}
             <div class="input-group mb-3">
-                <select class="form-control form-control-lg" placeholder="Recipient's username"
+                <select class="form-control form-control-lg" id="mainPositionFilter" placeholder="Recipient's username"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
                     <option disabled selected hidden>Position...</option>
                     {% get_positions as positions %}
@@ -255,10 +255,17 @@
         filterForm.verified,
     ]
 
+    const mainPositionFilter = document.getElementById('mainPositionFilter').addEventListener('change',()=>{
+        let queryString = '?'+ 'position=' + document.getElementById('mainPositionFilter').value
+        document.getElementById('vacancyList').innerHTML = ''
+        next = '/api/vacancy-list/' + queryString
+        loadVacancies()
+    })
     
     filterset.forEach(filter=>filter.addEventListener('change',()=>{
         let queryString = '?'
-    
+
+
         Array.from(filterForm.tag.options).filter(opt=>opt.selected).forEach(opt=>queryString+='tags='+opt.value+'&')
 
         queryString += 'position=' + filterForm.position.value + '&'
@@ -266,9 +273,7 @@
         queryString += filterForm.hot.checked ? 'hot=' + filterForm.hot.checked + '&' : ''
         queryString += filterForm.verified.checked ? 'verified=' + filterForm.verified.checked + '&' : ''
 
-        console.log(queryString)
         next = '/api/vacancy-list/'+queryString
-        console.log(next)
         
         document.getElementById('vacancyList').innerHTML = ''
         loadVacancies()
