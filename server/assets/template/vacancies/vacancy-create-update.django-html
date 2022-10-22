@@ -62,7 +62,7 @@ Profile Settings
                         {% endif %}
                     {% endfor %}
                 </div>
-                <input type="submit" value="Submit" class="btn btn-success w-100">
+                <input type="submit" value="Submit (?$)" class="btn btn-success w-100">
             </form>
         </div>
     </div>
