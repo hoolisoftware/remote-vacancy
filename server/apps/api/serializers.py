@@ -37,5 +37,6 @@ class VacancySerializer(serializers.ModelSerializer):
             'position',
             'location',
             'tags',
-            'since_published'
+            'since_published',
+            'published'
         )
