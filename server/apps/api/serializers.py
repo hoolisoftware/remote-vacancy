@@ -16,6 +16,7 @@ class VacancySerializer(serializers.ModelSerializer):
         read_only=True,
         slug_field='title'
     )
+    published = serializers.DateTimeField(format="%Y.%m.%d %H:%M", required=False, read_only=True)
     class Meta:
         model = Vacancy
         fields = (

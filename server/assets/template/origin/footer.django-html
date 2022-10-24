@@ -1,5 +1,9 @@
 <footer class="footer py-5">
     <center>
-        <small class="muted">(c) rmoteok</small>
+        <small class="muted">(c) web3power</small>
+        <br>
+        <a href="{% url 'vacancies:terms-of-service' %}">Terms of service</a>
+        &nbsp;
+        <a href="{% url 'vacancies:privacy-policy' %}">Privacy Policy</a>
     </center>
 </footer>

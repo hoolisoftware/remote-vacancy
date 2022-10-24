@@ -40,9 +40,9 @@
 
     const renderVacancy = (object) => {
         return `
-            <div class="card text-light p-4 mb-3">
+            <div class="card text-light p-3 px-4 mb-3">
                 <div class="row align-items-center">
-                    <div class="col-md-5 mb-3">
+                    <div class="col-md-5">
                         <div class="d-flex" style="gap: 1rem">
                             <a 
                             data-bs-toggle="collapse" 
@@ -53,7 +53,7 @@
                                 <img src="${object.company_logo}" style="height: 70px; width: 70px; object-fit: cover" class="rounded-circle" alt="logo">
                             </a>
                             <div>
-                                <div class="mb-2">
+                                <div>
                                     <b>
                                         <a  
                                         class="text-light"
@@ -72,11 +72,11 @@
                                 <span class="badge text-bg-light">🌏 ${object.location}</span>
                                 <span class="badge text-bg-success">${object.salary}</span>
                                 &nbsp;
-                                ${object.hot?`<img src="static/img/hot2.gif" alt="hot">`:''}
+                                ${object.hot?`<span class="badge text-bg-light">🔥</span>`:''}
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-3 mb-3 mt-3">
                         ${object.tags.map(tag=>`<a href="#" class="badge text-bg-light">${tag}</a>`)}
                     </div>
                     <div class="col-md-2 col-6">🖇️ ${object.since_published}</div>

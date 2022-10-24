@@ -7,6 +7,8 @@ app_name = 'vacancies'
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),
     path('about/', views.AboutView.as_view(), name='about'),
+    path('privacy-policy/', views.PrivacyPolicyView.as_view(), name='privacy-policy'),
+    path('terms-of-service/', views.TermsOfServiceView.as_view(), name='terms-of-service'),
 
     path('vacancy-list/', views.VacancyListView.as_view(), name='vacancy-list'),
     path('vacancy-list-archive/', views.VacancyListArchiveView.as_view(), name='vacancy-list-archive'),

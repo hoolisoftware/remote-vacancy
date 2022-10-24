@@ -18,6 +18,13 @@ class HomeView(generic.ListView):
 class AboutView(generic.TemplateView):
     template_name = 'vacancies/about.django-html'
 
+class PrivacyPolicyView(generic.TemplateView):
+    template_name = 'vacancies/privacy-policy.django-html'
+
+class TermsOfServiceView(generic.TemplateView):
+    template_name = 'vacancies/terms-of-service.django-html'
+
+
 class VacancyRequestCreateView(generic.CreateView):
     model = models.VacancyRequest
     fields = (

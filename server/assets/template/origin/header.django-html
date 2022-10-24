@@ -2,7 +2,7 @@
     <header class="header container py-3">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand special-font" href="{% url 'vacancies:home' %}">💸 RmoteOK</a>
+                <a class="navbar-brand special-font" href="{% url 'vacancies:home' %}">💸 web3power</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
                     </ul>
                 </div>
                     <div class="d-none d-lg-block">
-                        <a class="btn btn-sm btn-success" href="{% url 'vacancies:vacancy-create' %}">📄 Post Job (?$)</a>
+                        <a class="btn btn-lg btn-success" href="{% url 'vacancies:vacancy-create' %}">📄 Post Job (?$)</a>
                         {% if request.user.is_authenticated %}
                             <div class="dropdown d-inline">
                                 <button 

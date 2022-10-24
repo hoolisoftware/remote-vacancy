@@ -1,15 +1,15 @@
 {% load static %}
 
-<div class="card text-light p-4 mb-3" id="vacancyCard{{object.id}}">
+<div class="card text-light p-3 px-4 mb-3" id="vacancyCard{{object.id}}">
     <div class="row align-items-center">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4">
             <div class="d-flex" style="gap: 1rem">
                 <a data-bs-toggle="collapse" href="#vacancyContent{{object.id}}" role="button" aria-expanded="false"
                     aria-controls="vacancyContent{{object.id}}">
                     <img src="{{ object.company_logo.url }}" style="height: 70px; width: 70px; object-fit: cover" class="rounded-circle" alt="logo">
                 </a>
                 <div>
-                    <div class="mb-2">
+                    <div>
                         <b>
                             <a data-bs-toggle="collapse" href="#vacancyContent{{object.id}}" role="button"
                                 aria-expanded="false" aria-controls="vacancyContent{{object.id}}" class="text-light">
@@ -26,12 +26,12 @@
                     <span class="badge text-bg-success">{{ object.salary }}</span>
                     &nbsp;
                     {% if object.hot %}
-                    <img src="{% static '' %}img/hot2.gif" alt="hot">
+                        <span class="badge text-bg-light">🔥</span>
                     {% endif %}
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 my-3">
             {% for tag in object.tags.all %}
             <a href="#" class="badge text-bg-light">{{ tag.title }}</a>
             {% endfor %}
