@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    Profile Settings
+    Profile settings
 {% endblock title %}
 
 {% block content %}

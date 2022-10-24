@@ -1,7 +1,7 @@
 {% extends 'origin/base.django-html' %}
 
 {% block title %}
-    Register
+    Registration
 {% endblock title %}
 
 {% block content %}

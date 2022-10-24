@@ -16,8 +16,4 @@ urlpatterns = [
     path('vacancy-update/<int:pk>', views.VacancyUpdateView.as_view(), name='vacancy-update'),
     path('vacancy-payment/<int:pk>', views.VacancyPaymentView.as_view(), name='vacancy-payment'),
     path('vacancy/<int:pk>', views.VacancyDetailView.as_view(), name='vacancy-detail'),
-
-    path('vacancy-request-create/', views.VacancyRequestCreateView.as_view(), name='vacancy-request-create'),
-    path('vacancy-request-list/<int:pk>', views.VacancyRequestListView.as_view(), name='vacancy-request-list'),
-
 ]

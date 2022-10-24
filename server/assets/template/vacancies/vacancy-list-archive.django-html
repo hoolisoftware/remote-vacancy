@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    Your Publications
+    Your Archive
 {% endblock title %}
 
 {% block content %}
