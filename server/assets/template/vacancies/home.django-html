@@ -72,7 +72,7 @@
                                 <span class="badge text-bg-light">🌏 ${object.location}</span>
                                 <span class="badge text-bg-success">${object.salary}</span>
                                 &nbsp;
-                                ${object.hot?`<span class="badge text-bg-light">🔥</span>`:''}
+                                ${object.hot?`<span class="badge text-bg-dark">🔥</span>`:''}
                             </div>
                         </div>
                     </div>

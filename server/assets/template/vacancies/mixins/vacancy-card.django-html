@@ -26,7 +26,7 @@
                     <span class="badge text-bg-success">{{ object.salary }}</span>
                     &nbsp;
                     {% if object.hot %}
-                        <span class="badge text-bg-light">🔥</span>
+                        <span class="badge text-bg-dark">🔥</span>
                     {% endif %}
                 </div>
             </div>
