@@ -12,6 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.1/slimselect.min.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/icons/favicon.png' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nunjucks/3.0.0/nunjucks.min.js" integrity="sha512-slorw2PfciHjkecUC+5i5E/Mr2A4LhiVGTsGqCjadcSnOa/XG0I/QTiC222QR/vrS7uV72TMc2SW+1qAOyGQYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="bg-dark text-light">
