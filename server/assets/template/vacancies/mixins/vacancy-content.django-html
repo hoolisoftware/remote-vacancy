@@ -37,7 +37,7 @@
                         </tr>
                         <tr>
                             <td>Company Twitter</td>
-                            <td><a href="{{object.company_twitter}}"></a>{{object.company_twitter}}</td>
+                            <td><a href="{{object.company_twitter}}">{{object.company_twitter}}</a></td>
                         </tr>
                         <tr>
                             <td>Location</td>
