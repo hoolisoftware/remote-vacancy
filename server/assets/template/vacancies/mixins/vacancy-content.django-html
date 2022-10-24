@@ -33,11 +33,11 @@
                         </tr>
                         <tr>
                             <td>Company Website</td>
-                            <td>{{object.company_website}}</td>
+                            <td><a href="{{object.company_website}}">{{object.company_website}}</a></td>
                         </tr>
                         <tr>
                             <td>Company Twitter</td>
-                            <td>{{object.company_twitter}}</td>
+                            <td><a href="{{object.company_twitter}}"></a>{{object.company_twitter}}</td>
                         </tr>
                         <tr>
                             <td>Location</td>
