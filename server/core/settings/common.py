@@ -1,16 +1,12 @@
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-SECRET_KEY = 'django-insecure-r9$j3gb=3l+u!y$j$j3y3%b3e4%uh_z49((9s@ru41uzo*7d!g'
-
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
+    'corsheaders',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -32,6 +28,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'

@@ -10,16 +10,19 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="{% url 'vacancies:home' %}" class="nav-link active" aria-current="page" href="#">Vacancies</a>
+                            <a href="{% url 'vacancies:home' %}" class="nav-link active" aria-current="page"
+                                href="#">Vacancies</a>
                         </li>
                         <li class="nav-item">
                             <a href="{% url 'vacancies:about' %}" class="nav-link active" aria-current="page">About</a>
                         </li>
                         {% if request.user.is_authenticated %}
-                            <li class="nav-item d-block d-lg-none"><a class="nav-link active" aria-current="page" href="{% url 'vacancies:vacancy-list' %}">
+                        <li class="nav-item d-block d-lg-none"><a class="nav-link active" aria-current="page"
+                                href="{% url 'vacancies:vacancy-list' %}">
                                 My Vacancies
                             </a></li>
-                            <li class="nav-item d-block d-lg-none"><a class="nav-link active" aria-current="page" href="{% url 'users:logout' %}">
+                        <li class="nav-item d-block d-lg-none"><a class="nav-link active" aria-current="page"
+                                href="{% url 'users:logout' %}">
                                 <i class="fa-solid fa-right-from-bracket"></i>
                                 &nbsp;
                                 Logout
@@ -27,51 +30,55 @@
                         {% endif %}
                         <div class="row">
                             <div class="col-sm-6">
-                                <a class="btn btn-success mt-3 d-lg-none d-block w-100" href="{% url 'vacancies:vacancy-create' %}">📄 Post Job (?$)</a>
+                                <a class="btn btn-success mt-3 d-lg-none d-block w-100"
+                                    href="{% url 'vacancies:vacancy-create' %}">📄 Post Job (?$)</a>
                             </div>
                             <div class="col-sm-6">
                                 {% if not request.user.is_authenticated %}
-                                    <a class="btn btn-primary mt-3 d-lg-none w-100 d-block" href="{% url 'users:login' %}">
-                                        <i class="fa-solid fa-right-to-bracket"></i>
-                                        &nbsp;
-                                        Login / Register
-                                    </a>                        
+                                <a class="btn btn-primary mt-3 d-lg-none w-100 d-block" href="{% url 'users:login' %}">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                    &nbsp;
+                                    Login / Register
+                                </a>
                                 {% else %}
-                                    <a class="btn btn-primary mt-3 d-lg-none w-100 d-block" href="{% url 'users:user-update' %}">
-                                        <i class="fa-solid fa-right-to-bracket"></i>
-                                        &nbsp;
-                                        Profile
-                                    </a>
+                                <a class="btn btn-primary mt-3 d-lg-none w-100 d-block"
+                                    href="{% url 'users:user-update' %}">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                    &nbsp;
+                                    Profile
+                                </a>
                                 {% endif %}
                             </div>
                         </div>
                     </ul>
                 </div>
-                    <div class="d-none d-lg-block">
-                        <a class="btn btn-lg btn-success" href="{% url 'vacancies:vacancy-create' %}">📄 Post Job (?$)</a>
-                        {% if request.user.is_authenticated %}
-                            <div class="dropdown d-inline">
-                                <button 
-                                class="btn btn-sm btn-primary" 
-                                type="button" 
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" 
-                                aria-expanded="false">
-                                👤
-                                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success rounded-circle">
-                                    <span class="visually-hidden">New alerts</span>
-                                </span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="{% url 'users:user-update' %}"><i class="fa-solid fa-user"></i>&nbsp; My Profile</a></li>
-                                <li><a class="dropdown-item" href="{% url 'vacancies:vacancy-list' %}"><i class="fa-solid fa-paperclip"></i>&nbsp; My Vacancies</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="{% url 'users:logout' %}"><i class="fa-solid fa-right-from-bracket"></i>&nbsp; Logout</a></li>
-                            </ul>
+                <div class="d-none d-lg-block">
+                    <a class="btn btn-lg btn-success" href="{% url 'vacancies:vacancy-create' %}">📄 Post Job (?$)</a>
+                    {% if request.user.is_authenticated %}
+                    <div class="dropdown d-inline">
+                        <button class="btn btn-sm btn-info" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            👤
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-2 bg-success rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="{% url 'users:user-update' %}"><i
+                                        class="fa-solid fa-user"></i>&nbsp; My Profile</a></li>
+                            <li><a class="dropdown-item" href="{% url 'vacancies:vacancy-list' %}"><i
+                                        class="fa-solid fa-paperclip"></i>&nbsp; My Vacancies</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{% url 'users:logout' %}"><i
+                                        class="fa-solid fa-right-from-bracket"></i>&nbsp; Logout</a></li>
+                        </ul>
                         {% else %}
-                            <a href="{% url 'users:login' %}" class="btn btn-sm btn-outline-primary position-relative">
-                                <i class="fa-solid fa-right-to-bracket"></i>
-                            </a>
+                        <a href="{% url 'users:login' %}" class="btn btn-sm btn-outline-primary position-relative">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </a>
                         {% endif %}
                     </div>
                 </div>
