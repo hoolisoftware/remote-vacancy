@@ -1,0 +1,22 @@
+{% extends 'origin/base.django-html' %}
+{% load static %}
+{% load custom_templatetags %}
+
+{% block title %}
+    Privacy Policy
+{% endblock title %}
+
+{% block content %}
+{% include 'origin/header.django-html' %}
+<div class="container px-4 py-5">
+    <p>
+        This is portfolio project created by Hooli Software ©
+    </p>
+    <p>
+        Visit <a href="https://hoolisoftware.xyz/contact">our official website</a>!
+    </p>
+    <p>
+        All rights reserved.
+    </p>
+</div>
+{% endblock content %}
